@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <title>{{ title }}</title>
+
+        
+          <!-- Required meta tags -->
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+          <!-- Bootstrap CSS -->
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      
+    </head>
+    <body>
+        <style>
+            body {
+              background-image: url('https://i.pinimg.com/originals/f3/07/a5/f307a58beeb9f5362404f65a4b88ad23.jpg');
+            }
+            </style>
+    
+    <style>
+      body {
+        background-image: url('https://i.pinimg.com/originals/f3/07/a5/f307a58beeb9f5362404f65a4b88ad23.jpg');
+      }
+      </style>
+<style>
+.btn-group button {
+  background-color: #238ecc; /* Green background */
+  border: 1px solid rgb(74, 17, 167); /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
+</style> 
+        
+    <div class="btn-group">
+    <form>
+        <button type="submit" style="font-weight: bold;" formaction="http://localhost:5000/">Home</button>
+        <button type="submit" style="font-weight: bold;" formaction="http://localhost:5000/login">Admin</button>
+      </form>
+    </div>
+    <br> 
+    <br>
+    <h1 style="text-align: center; margin: 0px; color: black">
+      <b>Identify Monument Architecture!</b>
+    </h1>
+    <br />
+    <br>
+  
+  <div style="
+      width: 350px;
+      height: 50rem;
+      margin: 0px auto;
+      color: black;
+      border-radius: 25px;
+      padding: 10px 10px;
+      font-weight: bold;
+    ">
+  
+    
+  <style>
+    .btn-group button {
+      background-color: #238ecc; /* Green background */
+      border: 1px solid rgb(74, 17, 167); /* Green border */
+      color: white; /* White text */
+      padding: 10px 24px; /* Some padding */
+      cursor: pointer; /* Pointer/hand icon */
+      float: left; /* Float the buttons side by side */
+      margin-left: 20px;
+    }
+    
+    /* Clear floats (clearfix hack) */
+    .btn-group:after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+    .btn-group button:not(:last-child) {
+      border-right: none; /* Prevent double borders */
+    }
+    
+    /* Add a background color on hover */
+    .btn-group button:hover {
+      background-color: #3e8e41;
+    }
+    
+    
+    </style> 
+  
+  <form class="form-signin" method="post" action =" " enctype=multipart/form-data>
+    
+    <h2 class="h4 mb-3 font-weight-normal"><b>Please Upload an Image:</b></h2>
+    <input type="file" name="file" class="form-control-file" id="file" accept="image/x-png,image/gif,image/jpeg, image/jpg" onchange="preview_image(event)" style="font-weight: bold;">
+    <br>
+    <br>
+    <img id="output-image" class="rounded mx-auto d-block" />
+    <br>
+    
+    <div class ="btn-group">
+    <button type="submit" style="font-weight: bold;" formaction="http://localhost:5000/predict">Predict</button> <!--- Save this info to database-->
+    <form method="post">
+        
+      <button type="submit" style="font-weight: bold;" formaction="http://localhost:5000/">Reset</button>   
+        
+     
+    </form>
+    </div>
+  </form>
+  <div class ="btn-group">
+    
+      
+   </div>
+    <style>
+      body {
+        background-image: url('https://i.pinimg.com/originals/f3/07/a5/f307a58beeb9f5362404f65a4b88ad23.jpg');
+      }
+      </style>
+<style>
+.btn-group button {
+  background-color: #238ecc; /* Green background */
+  border: 1px solid rgb(74, 17, 167); /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  margin-left: 20px;
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
+
+
+</style> 
+
+   <br/>
+   <br/>
+   <h4>Architecture is : {{architecture}} </h4>
+  </div>
+  
+  <script type="text/javascript">
+    function preview_image(event) {
+      var reader = new FileReader();
+      reader.onload = function () {
+        var output = document.getElementById('output-image')
+        output.src = reader.result;
+      }
+      reader.readAsDataURL(event.target.files[0]);
+    }
+  </script>
+  
+  </div>
+  
+  
+</body>
+</html>
