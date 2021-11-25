@@ -10,7 +10,7 @@ from datetime import datetime
 import numpy as np
 import pandas as pd
 
-app = Flask(__name__, template_folder= 'Template')
+app = Flask(__name__)
 ##database
 
 
