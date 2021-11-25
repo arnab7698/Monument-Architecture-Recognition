@@ -30,7 +30,7 @@ for K in grid:
 clf = SVC(C=grid[C_score.index(max(C_score))])
 clf.fit(X_train, Y_train)
 #y_pred = clf.predict(X_test)
-filename= "C:\\Users\\anany\\OneDrive\\Documents\\IIITD\\DPM\\SVM.sav"
+filename= "C:\\Users\\anany\\OneDrive\\Documents\\IIITD\\DPM\\Git Project\\SVM.sav"
 joblib.dump(clf, filename)
 print('Done')
 
