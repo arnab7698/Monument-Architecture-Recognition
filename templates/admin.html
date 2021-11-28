@@ -129,7 +129,7 @@
       
           
       <form method="post">
-        <div class="w3-show-inline-block">
+<!--         <div class="w3-show-inline-block">
           <div class="w3-bar">
         <button type="submit" class="w3-btn w3-teal" button style="font-weight: bold;" formaction="http://localhost:5000/ancient">Ancient</button>
         <button type="submit" class="w3-btn w3-teal" style="font-weight: bold;" formaction="http://localhost:5000/british">British</button>
@@ -143,12 +143,12 @@
         <button type="submit"  class="w3-btn w3-teal" style="font-weight: bold;" formaction="http://localhost:5000/sikh">Sikh</button>
       </div>
       
-    </div>
+    </div> -->
     <div class="w3-show-inline-block">
     <div class="w3-bar">
     {% for archs in architectures %}
     <!-- <button type="submit" class="w3-btn w3-teal" style="font-weight: bold;" formaction="http://localhost:5000/dataset">{{archs}}</button> -->
-    <input type="submit" name="submit_button" value="{{archs}}" formaction="http://localhost:5000/dataset"/> 
+    <input type="submit" name="submit_button" value="{{archs}}" formaction="http://localhost:5000/dataset" class="w3-btn w3-teal" style="font-weight: bold;"/> 
     {% endfor %}
       </form>
     </div>
