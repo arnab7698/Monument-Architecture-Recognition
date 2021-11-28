@@ -120,70 +120,70 @@ def get_dataset():
 
 
 
-# #######Ancient ######
-@app.route('/upload/ancient/<filename>')
-def send_ancient(filename):
-    return send_from_directory("Data/Ancient", filename)
+# # #######Ancient ######
+# @app.route('/upload/ancient/<filename>')
+# def send_ancient(filename):
+#     return send_from_directory("Data/Ancient", filename)
 
-@app.route('/ancient')
-def get_ancient():
-    image_names = os.listdir('C:\\Users\\anany\\OneDrive\\Documents\\IIITD\\DPM\\Git Project\\Data\\Ancient')
-    print(image_names)
-    return render_template("ancient.html", image_names=image_names)
+# @app.route('/ancient')
+# def get_ancient():
+#     image_names = os.listdir('C:\\Users\\anany\\OneDrive\\Documents\\IIITD\\DPM\\Git Project\\Data\\Ancient')
+#     print(image_names)
+#     return render_template("ancient.html", image_names=image_names)
 
-##############British#######
-@app.route('/upload/british/<filename>')
-def send_british(filename):
-    return send_from_directory("Data/British", filename)
+# ##############British#######
+# @app.route('/upload/british/<filename>')
+# def send_british(filename):
+#     return send_from_directory("Data/British", filename)
 
-@app.route('/british')
-def get_british():
-    image_names = os.listdir('C:\\Users\\anany\\OneDrive\\Documents\\IIITD\\DPM\\Git Project\\Data\\British')
-    print(image_names)
-    return render_template("british.html", image_names=image_names)
-# #######Indo-Islamic ######
-@app.route('/upload/indo/<filename>')
-def send_indo(filename):
-    return send_from_directory("Data/IndoIslamic", filename)
+# @app.route('/british')
+# def get_british():
+#     image_names = os.listdir('C:\\Users\\anany\\OneDrive\\Documents\\IIITD\\DPM\\Git Project\\Data\\British')
+#     print(image_names)
+#     return render_template("british.html", image_names=image_names)
+# # #######Indo-Islamic ######
+# @app.route('/upload/indo/<filename>')
+# def send_indo(filename):
+#     return send_from_directory("Data/IndoIslamic", filename)
 
-@app.route('/indo')
-def get_indo():
-    image_names = os.listdir('C:\\Users\\anany\\OneDrive\\Documents\\IIITD\\DPM\\Git Project\\Data\\IndoIslamic')
-    print(image_names)
-    return render_template("indo.html", image_names=image_names)
+# @app.route('/indo')
+# def get_indo():
+#     image_names = os.listdir('C:\\Users\\anany\\OneDrive\\Documents\\IIITD\\DPM\\Git Project\\Data\\IndoIslamic')
+#     print(image_names)
+#     return render_template("indo.html", image_names=image_names)
 
-# #######Maratha ######
-@app.route('/upload/maratha/<filename>')
-def send_maratha(filename):
-    return send_from_directory("Data/Maratha", filename)
+# # #######Maratha ######
+# @app.route('/upload/maratha/<filename>')
+# def send_maratha(filename):
+#     return send_from_directory("Data/Maratha", filename)
 
-@app.route('/maratha')
-def get_maratha():
-    image_names = os.listdir('C:\\Users\\anany\\OneDrive\\Documents\\IIITD\\DPM\\Git Project\\Data\\Maratha')
-    print(image_names)
-    return render_template("maratha.html", image_names=image_names)
+# @app.route('/maratha')
+# def get_maratha():
+#     image_names = os.listdir('C:\\Users\\anany\\OneDrive\\Documents\\IIITD\\DPM\\Git Project\\Data\\Maratha')
+#     print(image_names)
+#     return render_template("maratha.html", image_names=image_names)
 
-# #######Not a Monument ######
-@app.route('/upload/notmonument/<filename>')
-def send_notmonument(filename):
-    return send_from_directory("Data/Not a Monument", filename)
+# # #######Not a Monument ######
+# @app.route('/upload/notmonument/<filename>')
+# def send_notmonument(filename):
+#     return send_from_directory("Data/Not a Monument", filename)
 
-@app.route('/notmonument')
-def get_notmonument():
-    image_names = os.listdir('C:\\Users\\anany\\OneDrive\\Documents\\IIITD\\DPM\\Git Project\\Data\\Not a Monument')
-    print(image_names)
-    return render_template("notmonument.html", image_names=image_names)
+# @app.route('/notmonument')
+# def get_notmonument():
+#     image_names = os.listdir('C:\\Users\\anany\\OneDrive\\Documents\\IIITD\\DPM\\Git Project\\Data\\Not a Monument')
+#     print(image_names)
+#     return render_template("notmonument.html", image_names=image_names)
 
-# #######Sikh ######
-@app.route('/upload/sikh/<filename>')
-def send_sikh(filename):
-    return send_from_directory("Data/Sikh", filename)
+# # #######Sikh ######
+# @app.route('/upload/sikh/<filename>')
+# def send_sikh(filename):
+#     return send_from_directory("Data/Sikh", filename)
 
-@app.route('/sikh')
-def get_sikh():
-    image_names = os.listdir('C:\\Users\\anany\\OneDrive\\Documents\\IIITD\\DPM\\Git Project\\Data\\Sikh')
-    print(image_names)
-    return render_template("sikh.html", image_names=image_names)
+# @app.route('/sikh')
+# def get_sikh():
+#     image_names = os.listdir('C:\\Users\\anany\\OneDrive\\Documents\\IIITD\\DPM\\Git Project\\Data\\Sikh')
+#     print(image_names)
+#     return render_template("sikh.html", image_names=image_names)
 
 #============================
 #Preprocessing and model
@@ -306,7 +306,7 @@ def model(filepath):
 #     Y= np.load(g)
 
 # archi = model_svm(X,Y,a)
-    f = "C:\\Users\\anany\\OneDrive\\Documents\\IIITD\\DPM\\SVM.sav"
+    f = "C:\\Users\\anany\\OneDrive\\Documents\\IIITD\\DPM\\Git Project\\SVM.sav"
     loaded_model=joblib.load(f)
     
     y_pred = loaded_model.predict(a)
