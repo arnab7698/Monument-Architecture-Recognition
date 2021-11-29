@@ -34,7 +34,7 @@ def login():
 
 import os
 from werkzeug.utils import secure_filename
-app.config['PATH'] = 'C:\\Users\\anany\\OneDrive\\Documents\\IIITD\\DPM\\Test images'
+app.config['PATH'] = '/home/dev/apps/ananya21162/Monument-Architecture-Recognition/Test images'
 
 @app.route('/predict', methods= ['GET', 'POST'])
 def predict():
