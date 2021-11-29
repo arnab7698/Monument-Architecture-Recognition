@@ -66,7 +66,7 @@ def predict():
 
 
 
-app.config['UPLOAD_PATH'] = 'C:\\Users\\anany\\OneDrive\\Documents\\IIITD\\DPM\\Git Project\\Data'
+app.config['UPLOAD_PATH'] = '/home/dev/apps/ananya21162/Monument-Architecture-Recognition/Data'
 
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
   
