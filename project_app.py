@@ -29,7 +29,7 @@ def login():
         if request.form['username'] != 'admin' or request.form['password'] != 'admin':
             error = 'Invalid Credentials. Please try again.'
         else:
-            return redirect('http://localhost:5000/admin')
+            return redirect('/admin')
     return render_template('login.html', error=error)
 
 import os
