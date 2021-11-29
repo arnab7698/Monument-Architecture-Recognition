@@ -47,8 +47,8 @@
       </style>   
     <div class="btn-group">
     <form>
-        <button type="submit" style="font-weight: bold;" formaction="http://localhost:5000/">Home</button>
-        <button type="submit" style="font-weight: bold;" formaction="http://localhost:5000/admin">Reset</button>
+        <button type="submit" style="font-weight: bold;" formaction="/">Home</button>
+        <button type="submit" style="font-weight: bold;" formaction="/admin">Reset</button>
       </form>
     </div>
     <br> 
@@ -111,7 +111,7 @@
         <option value="Sikh">Sikh</option>
         <option value="None">Not a monument</option>
         </select>
-        <button type="submit" style="font-weight: bold;" formaction="http://localhost:5000/admin">Submit</button> <!--- Save this info to database-->
+        <button type="submit" style="font-weight: bold;" formaction="/admin">Submit</button> <!--- Save this info to database-->
       </form>
      <br>
      
@@ -121,7 +121,7 @@
      <form action="#" method="post" enctype="multipart/form-data"> 
       Type Folder Name:<input type="text" name="foldername" /><br/><br/>
       Select Folder to Upload: <input type="file" name="files[]" id="files" multiple directory="" webkitdirectory="" moxdirectory="" /><br/><br/> 
-      <input type="Submit" value="Upload" name="upload" formaction="http://localhost:5000/folder"/>
+      <input type="Submit" value="Upload" name="upload" formaction="/folder"/>
       </form>
     </div>
     <!-- <h3> Dataset for different Monument Architectures: </h3> -->
@@ -148,7 +148,7 @@
     <div class="w3-bar">
     {% for archs in architectures %}
     <!-- <button type="submit" class="w3-btn w3-teal" style="font-weight: bold;" formaction="http://localhost:5000/dataset">{{archs}}</button> -->
-    <input type="submit" name="submit_button" value="{{archs}}" formaction="http://localhost:5000/dataset" class="w3-btn w3-teal" style="font-weight: bold;"/> 
+    <input type="submit" name="submit_button" value="{{archs}}" formaction="/dataset" class="w3-btn w3-teal" style="font-weight: bold;"/> 
     {% endfor %}
       </form>
     </div>
