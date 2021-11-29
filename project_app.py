@@ -34,7 +34,7 @@ def login():
 
 import os
 from werkzeug.utils import secure_filename
-app.config['PATH'] = '/home/dev/apps/ananya21162/Monument-Architecture-Recognition/Test images'
+app.config['PATH'] = '/home/dev/apps/ananya21162/Monument-Architecture-Recognition/Test'
 
 @app.route('/predict', methods= ['GET', 'POST'])
 def predict():
@@ -306,7 +306,7 @@ def model(filepath):
 #     Y= np.load(g)
 
 # archi = model_svm(X,Y,a)
-    f = "C:\\Users\\anany\\OneDrive\\Documents\\IIITD\\DPM\\Git Project\\SVM.sav"
+    f = '/home/dev/apps/ananya21162/Monument-Architecture-Recognition/SVM.sav'
     loaded_model=joblib.load(f)
     
     y_pred = loaded_model.predict(a)
